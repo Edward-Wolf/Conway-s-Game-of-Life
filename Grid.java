@@ -123,7 +123,8 @@ public class Grid extends JPanel
                 grid[row][col] = new JToggleButton();
                 grid[row][col].addActionListener(buttonListener);
                 universPanel.add(grid[row][col]);
-                UIManager.put("ToggleButton.select", Color.GREEN);
+                Color color = Color.decode("#D92CF9");
+                UIManager.put("ToggleButton.select", color);
                 UIManager.put("ToggleButton.background", Color.BLACK);
                 SwingUtilities.updateComponentTreeUI(grid[row][col]);
             }
